@@ -1,0 +1,25 @@
+/* 公用 */
+.leftArea{float:left;}
+.rightArea{float:right;}
+.comWidth{width:1000px;margin:0 auto;}
+
+/* topBar */
+.topBar{height:31px;  background-color: #f7f7f7;font:14px/31px 'Microsoft YaHei';}
+.collection{font-weight: bold;background:url(../img/icon/collection.jpg) left center no-repeat; padding-left:19px;}
+.topBar a:hover{color:red;}
+
+/* logo */
+.logoBar{height:85px;background-color: #1d7ad9; font:14px 'Microsoft YaHei';}
+.logo{padding:10px 0 10px 40px; float:left;}
+.search_box{float: left;width: 430px; padding:22px 0 22px 180px;}
+.search_text{height:14px;width:350px; padding:  10px 5px;background-color: #fff;}
+.search_btn{width: 70px;height: 34px;background-color: #ff8c00; font:14px 'Microsoft YaHei';;color:#fff;float:right;}
+.shop_car{margin-left:30px; margin-right:55px;float:left; width:152px ;height:35px; background-color: #ff8c00; margin-top:22px;font:14px/35px  'Microsoft YaHei';color:#fff;}
+.shop_text{ width:86px;height:100%;float:left;border-right:1px solid #e27a00;background: url(../img/icon/shop_car.jpg) 10px center no-repeat ; text-indent: 40px;}
+.shop_num{width:30px;height:100%; padding-right:28px ;border-left:1px solid #e27a00;display:inline-block;background:url(../img/icon/arrowDown.jpg) 33px center no-repeat; text-align: right;}
+/* navBar */
+.navBar{height:35px;background-color: #1369c0;}
+
+.shopClass{float:left; width:120px;padding-left:40px;font: 14px/35px  'Microsoft YaHei' ;color:#fff;background-color:#1369c0;background:url(../img/icon/arrow.jpg) 142px center no-repeat;}
+.shopClass h3{font-weight:normal;}
+.nav li{float:left;}
