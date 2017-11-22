@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>require</title>
+	<style>
+		body,nav,ul,li{
+			margin:0;
+			padding:0;
+			
+		}
+		a{
+			text-decoration: none;
+			color:inherit;
+		}
+		li{
+			list-style: none;
+			display: inline-block;
+			
+		}
+		.fl{float:left;}
+		.fr{float:right;}
+		img{
+			position: absolute;top: 0;
+			z-index: -5;
+		}
+		nav{
+			min-width:1210px;
+			background: rgba(2,3,4,0.7);
+		    height: 20px;
+		    font-size: 14px;
+		    line-height: 22px;
+		    padding: 10px;
+		    margin: 30px;
+		    color: #fff;
+		    border-radius: 5px;
+		    font-family: '微软雅黑';
+		}
+		.item{
+			/*border-left:1px solid #999;*/
+			color:#fff;
+			text-align: center;
+
+		}
+		.item:hover{
+			color:#DEB47C;
+		}
+		.item.active{
+			color:#DEB47C;
+		}
+		.item-ul .item:not(:first-child):before{
+			content: '';
+			height: 10px;
+			width:1px;
+			background-color:#fff;
+			display: inline-block;
+			margin:0 10px;
+		}
+		.li-middle{
+			margin-right:220px;
+		}
+		.item-last{
+			padding-right: 0;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul class="item-ul fl">
+			<li class="item active"><a href="">VIP精选</a></li>
+			<li class="item"><a href="">电影</a></li>
+			<li class="item"><a href="">电视剧</a></li>
+			<li class="item"><a href="">动漫</a></li>
+			<li class="item"><a href="">纪录片</a></li>
+			<li class="item"><a href="">演唱会</a></li>
+			<li class="item"><a href="">教育</a></li>
+			<li class="item"><a href="">儿童</a></li>
+		</ul>
+
+			<!-- <li class="li-middle">&nbsp;</li> -->
+		<ul class="item-ul fr">
+			<li class="item"><a href="">会员俱乐部</a></li>
+			<li class="item"><a href="">成长体系</a></li>
+			<li class="item"><a href="">我的账户</a></li>
+			<li class="item"><a href="">会员帮助中心</a></li>
+		</ul>
+	</nav>
+	<img src="997e0f7f9e2f0708e1fb1fc2e324b899ab01f29a.jpg" id="test" width="100%">
+	
+	<input type="file" id="imgLoad" value="上传图片">
+
+
+
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" >
+		
+		$('#imgLoad').on('change',function(){
+			var imgs =	$('#imgLoad').prop('files');
+			$('#test').prop('src',imgs[0].name);
+			var formData =  new FormData();
+			formData.append('floder','avatar');
+			formData.append('img',imgs[0]);
+			// $.post(
+			// 		'http://xp-dlv.toocms.com/index.php/Appdata/uploadImg',
+			// 		imgData
+			// 	)
+			var url = 'http://xp-dlv.toocms.com/index.php/Appdata/uploadImg';
+			var tUrl = 'http://xp-api.toocms.com/index.php/Fict/getRequest ';
+			$.ajax({
+                type:'POST',
+                url:tUrl,
+                // data:formData,
+                data:{d:'0'},
+                contentType:undefined,
+                processData:false,
+                // mimeType:"multipart/form-data",
+                success:function(data){
+                    
+                }
+            });
+		})
+	</script>
+</body>
+</html>

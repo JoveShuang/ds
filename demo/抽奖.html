@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        ul {
+            width: 550px;
+        }
+        .item {
+            list-style: none;
+            width: 160px;
+            height: 120px;
+            background: #ccc;
+            float: left;
+            margin: 10px;
+        }
+        .start {
+            list-style: none;
+            width: 160px;
+            height: 120px;
+            background: dodgerblue;
+            font: 36px/120px "Microsoft YaHei";
+            color: blue;
+            text-align: center;
+            float: left;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .item-box {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            transition: ease .2s;
+        }
+        .item.blue .item-box {
+            background: blue;
+        }
+        .item-1{
+            list-style: none;
+            width:160px;
+            height: 120px;
+            background:blue;
+            position: absolute;
+            transition: ease .2s;
+            margin:10px;
+            opacity: 0;
+            animation-timing-function: ease;
+            /*animation: myfirst 5s infinite;*/
+        }
+
+        @keyframes myfirst
+        {
+        0%  {left: 50px;top:15px;}
+        12.5%   {left:230px; top:15px;}
+        25%  { left:410px; top:15px;}
+        37.5%  { left:410px; top:150px;}
+        50%  {left:410px; top:295px;}
+
+        62.5%   {left:230px; top:295px;}
+        75%  { left:50px; top:295px;}
+        87.5%  { left:50px; top:150px;}
+        100%  {left:50px; top:15px;}
+        
+
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="Aitem">
+        <li class="item-1"></li>
+        <li class="item"><div class="item-box">3w欢乐豆</div></li>
+        <li class="item"><div class="item-box">沙发</div></li>
+        <li class="item"><div class="item-box">iPhone8 PLUS</div></li>
+        <li class="item"><div class="item-box">白葡萄酒</div></li>
+        <li class="start" id="btn">START</li>
+        <li class="item"><div class="item-box">888元现金红包</div></li>
+        <li class="item"><div class="item-box">数据线</div></li>
+        <li class="item"><div class="item-box">10积分</div></li>
+        <li class="item"><div class="item-box">30元话费</div></li>
+    </ul>
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $("#btn").on("click", function() {
+            $.get("http://www.shuangstar.xyz/index.php").done(function(res) {
+                // setTimeout(animate, 100, 16 + +res.id, 0, res.name);
+                // console.debug(res);
+                // setTimeout(animate,100,res.name);
+                animate(res.id,res.name);
+                
+            });
+        });
+
+        // var animate = function ani(count, num, gift) {
+        //     $(".item").removeClass("blue");
+        //     $(".item").eq(num % 8).addClass("blue");
+        //     if(count > 1) {
+        //         setTimeout(ani, 50+(num*25), count - 1, num + 1, gift);
+        //     } else {
+        //         setTimeout(alert, 400, "恭喜您！获得"+gift);
+        //     }
+        // }
+
+        var animate = function ani(count,gift) {
+            var tempTime = 0.3;
+            $('.item').css('background','#ccc')
+            $(".item-1").css('animation',"myfirst "+tempTime+"s infinite")
+            $(".item-1").css('opacity','1');
+            $('.item-1').css('animation-play-state','running')
+            // setInterval(function(){
+            //     tempTime += 0.5;
+            //     $('.item-1').css('animation',"myfirst "+tempTime+"s infinite")
+            // },1500)
+            setTimeout(function(){
+
+                $('.item-1').css('animation-play-state','pause')
+                $('.item-1').css('opacity','0')
+                $('.item').eq(count%8).css('background','blue')
+            },1500)
+            setTimeout(alert, 2000, "恭喜您！获得"+gift);
+        }
+        
+        // var p = new Promise(function(reslove, reject) {
+        //     reslove(0);
+        // });
+        // function animate(count) {
+        //     while(count--) {
+        //         p = p.then(function(val) {
+        //             $(".item").removeClass("blue");
+        //             $(".item").eq(val % 8).addClass("blue");
+        //             return val + 1;
+        //         });
+        //     }
+        // }
+        
+    </script>
+</body>
+</html>
