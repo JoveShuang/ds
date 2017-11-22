@@ -1,65 +1,75 @@
 /* 公用 */
-.leftArea{float:left;}
-.rightArea{float:right;}
-.comWidth{width:1000px;margin:0 auto;}
-.hide{display: none;}
-.show{display:block;}
+.leftArea{float:left}
+.rightArea{float:right}
+.comWidth{width:1000px;margin:0 auto}
+.fl{float:left}
+.fr{float:right}
+.hide{display: none}
+.show{display:block}
 
 /* topBar */
-.topBar{height:31px;  background-color: #f7f7f7;font:14px/31px 'Microsoft YaHei';}
-.collection{font-weight: bold;background:url(../img/icon/collection.jpg) left center no-repeat; padding-left:19px;}
-.topBar a:hover{color:red;}
+.topBar{height:31px;  background-color: #f7f7f7;font:14px/31px 'Microsoft YaHei'}
+.collection{font-weight: bold;background:url(../img/icon/collection.jpg) left center no-repeat; padding-left:19px}
+.topBar a:hover{color:red}
 
 /* logo */
-.logoBar{height:85px;background-color: #1d7ad9; font:14px 'Microsoft YaHei';}
-.logo{padding:10px 0 10px 40px; float:left;}
-.search_box{float: left;width: 430px; padding:22px 0 22px 180px;}
-.search_text{height:14px;width:350px; padding:  10px 5px;background-color: #fff;}
-.search_btn{width: 70px;height: 34px;background-color: #ff8c00; font:14px 'Microsoft YaHei';;color:#fff;float:right;}
-.shop_car{margin-left:30px; margin-right:55px;float:left; width:152px ;height:35px; background-color: #ff8c00; margin-top:22px;font:14px/35px  'Microsoft YaHei';color:#fff;}
-.shop_car a{color:#fff;}
-.shop_text{ width:86px;height:100%;float:left;border-right:1px solid #e27a00;background: url(../img/icon/shop_car.jpg) 10px center no-repeat ; text-indent: 40px;}
-.shop_num{width:30px;height:100%; padding-right:28px ;border-left:1px solid #e27a00;display:inline-block;background:url(../img/icon/arrowDown.jpg) 33px center no-repeat; text-align: right;}
+.logoBar{height:85px;background-color: #1d7ad9; font:14px 'Microsoft YaHei'}
+.logo{padding:10px 0 10px 40px; float:left}
+.search_box{float: left;width: 430px; padding:22px 0 22px 180px}
+.search_text{height:14px;width:350px; padding:  10px 5px;background-color: #fff}
+.search_btn{width: 70px;height: 34px;background-color: #ff8c00; font:14px 'Microsoft YaHei';;color:#fff;float:right}
+.shop_car{margin-left:30px; margin-right:55px;float:left; width:152px ;height:35px; background-color: #ff8c00; margin-top:22px;font:14px/35px  'Microsoft YaHei';color:#fff}
+.shop_car a{color:#fff}
+.shop_text{ width:86px;height:100%;float:left;border-right:1px solid #e27a00;background: url(../img/icon/shop_car.jpg) 10px center no-repeat ; text-indent: 40px}
+.shop_num{width:30px;height:100%; padding-right:28px ;border-left:1px solid #e27a00;display:inline-block;background:url(../img/icon/arrowDown.jpg) 33px center no-repeat; text-align: right}
 /* navBar */
-.navBar{height:35px;background-color: #1369c0;}
+.navBar{height:35px;background-color: #1369c0}
 
-.shopClass{float:left; width:190px;font-size: 14px  ;color:#fff; position: relative;}
-.shopClass h3{font-weight:normal;font-family: 'Microsoft YaHei' ; text-align: center; line-height:35px; background:url(../img/icon/arrow.jpg) 148px center no-repeat;}
-.nav{font: 14px/35px  'Microsoft YaHei' ;color:#fff;}
-.nav li{float:left;width:102px;text-align: center;}
-.nav a {color:inherit;}
-.nav .active{background:#4593fd;}
+.shopClass{float:left; width:190px;font-size: 14px  ;color:#fff; position: relative}
+.shopClass h3{font-weight:normal;font-family: 'Microsoft YaHei' ; text-align: center; line-height:35px; background:url(../img/icon/arrow.jpg) 148px center no-repeat}
+.nav{font: 14px/35px  'Microsoft YaHei' ;color:#fff}
+.nav li{float:left;width:102px;text-align: center}
+.nav a {color:inherit}
+.nav .active{background:#4593fd}
 
 /* 商品弹出列表 */
-.shopClass_show{background:#4593fd; color:#fff;position: absolute;left:0;top:35px;width:100%;}
-.shopClass_item{padding:18px 12px;border-bottom:1px solid #5aa1fe;border-top:1px solid #3487f2;}
-.shopClass_item a {color:#fff;line-height: 20px;}
-.shopClass_item dt{background: url(../img/icon/arrowRight.jpg)right center no-repeat;}
+.shopClass_show{background:#4593fd; color:#fff;position: absolute;left:0;top:35px;width:100%}
+.shopClass_item{padding:11px 12px;border-bottom:1px solid #5aa1fe;border-top:1px solid #3487f2}
+.shopClass_item a {color:#fff;line-height: 20px}
+.shopClass_item a:hover{text-decoration: underline}
+.shopClass_item dt{background: url(../img/icon/arrowRight.jpg)right center no-repeat}
 
-.shopClass_item dt .b{font-weight: bold;}
-.shopClass_item dt .yq{color:#fff;background:url(../img/icon/yq.jpg) left center no-repeat;width:48px;height: 20px; line-height: 20px;display: inline-block; text-align: center;text-decoration: underline;}
-.shopClass_item dd{font-size:12px;}
+.b{font-weight: bold}
+.yq{font-size:12px;color:#fff;background:url(../img/icon/yq.jpg) left center no-repeat;width:48px;height: 20px; line-height: 20px;display: inline-block; text-align: center;text-decoration: underline}
+.shopClass_item dd{font-size:12px}
 
 /*shopClass_item active 状态*/
-.shopClass_item.shopClass_itemActive{
-    background-color: #fff;
-    border-left:1px solid #2785e6;
-}
-.shopClass_item.shopClass_itemActive a{
-    text-decoration: none;
-    color:#000;
-}
-.yq{color:#fff!important;}
+.shopClass_item.active{background-color: #fff;border-left:1px solid #2785e6}
+.shopClass_item.active a{text-decoration: none;color:#000}
 /* 弹出的菜单 */
-.shopClass_list{width:570px;position: absolute;left:190px;top:35px;border:1px solid #dddddd;}
-.shopList_cont{margin:0 22px;border-bottom:1px solid #ccc;padding: 10px 0 ;}
-.shopList_item {line-height: 28px;}
-
-.shopList_item dt{font-weight: bold;}
+.shopClass_list{width:570px;position: absolute;background-color:#fff;left:190px;top:35px;border:1px solid #dddddd}
+.shopList_cont{margin:0 22px;border-bottom:1px solid #ccc;padding: 10px 0 }
+.shopList_item {line-height: 28px}
+.shopList_item dt{font-weight: bold}
 .shopList_item dt a{color:#4b88da; }
 .shopList_item dd{padding-left:88px; margin-top:-28px; }
-.shopList_item dd a{padding-right: 14px;}
-.shopList_item dd a:hover{color:#ff7300;}
+.shopList_item dd a{padding-right: 14px}
+.shopList_item dd a:hover{color:#ff7300}
 .shopList_channel{padding: 15px 22px}
-.shopList_channel div{margin-right: 12px;padding:8px;display:inline-block;background-color:#2785e6;}
-.shopList_channel a{color:#fff;}
+.shopList_channel div{margin-right: 12px;padding:8px;display:inline-block;background-color:#2785e6}
+.shopList_channel a{color:#fff}
+/* banner */
+.banner{margin-left:190px;width: 810px;height:328px; overflow:hidden}
+
+/* Main Content */
+.mainCont{}
+.content_item{}
+.contHeader{padding:14px 15px 14px 0 ; height:47px}
+.contHeader a{ color:#000;line-height: 55px}
+.contHeader h3{padding:14px 15px; font-size:16px; font-family: 'Microsoft YaHei'}
+.contLogo{width:45px;height:45px; background:url(../img/icon/contLogo.jpg);display: inline-block}
+.content_list{width:1000px;height:400px;border:1px solid #ccc}
+.leftBanner{height:400px;width:190px;position:relative}
+.smBanner{position:absolute}
+.bannerSelect{ background:url(../img/icon/bannerSelect.jpg);width:22px;height:6px}
+.rightBanner{width:807px;height:398px;border:1px solid #999;border-bottom:2px solid #ff7300}
