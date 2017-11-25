@@ -6,6 +6,7 @@
 .fr{float:right}
 .hide{display: none}
 .show{display:block}
+.gray{background-color:#f0f0f0;}
 
 /* topBar */
 .topBar{height:31px;  background-color: #f7f7f7;font:14px/31px 'Microsoft YaHei'}
@@ -96,6 +97,9 @@
 .footerLogo{margin:30px auto; width:610px }
 .footerLogo img{margin-right: 25px }
 
+
+/* page2 */
+
 /* product-list */
 .contBar{padding-top:16px }
 .product{width:810px}
@@ -119,6 +123,8 @@
 .camera-price{color:#dc105a;display: inline-block;padding-top: 10px;font-size:14px;font-weight: bold}
 .star{position:relative;top:4px;padding-bottom:2px;display:inline-block;width:13px;height:13px;background: url(../img/icon/star.jpg)left center no-repeat}
 .comment-num{color:#085c9b}
+
+/* page3 */
 
 /* 筛选部分 */
 .screen{}
@@ -150,6 +156,7 @@
 .product-cont-list-item-text{width:162px;}
 .add-car{width:90px;height: 25px;padding-left:25px;margin-top:10px; background:url(../img/icon/add-car.jpg)left center no-repeat;line-height: 25px;border:1px solid #c3d5e7 }
 .add-car a{color:#3679bd}
+.hot{background: url(../img/icon/hot.jpg)170px top no-repeat;}
 /* 翻页 */
 .change-page{margin:62px 0 -20px 20px;height: 28px;line-height: 28px}
 .change-page ul{margin-right:15px}
@@ -158,3 +165,64 @@
 .change-page button{width:50px; border:1px solid #c9c9c9;background-color:#e8e8e8 ;padding:5px 10px}
 .change-page-active{background-color: #2266bb}
 .change-page-active a{color:#fff}
+
+/* page4 */
+/* 面包屑导航 */
+.user-position{margin-top:10px;height:24px;line-height: 24px;padding:10px 0}
+.user-position li{float: left;margin-left:10px}
+/* 产品详情 */
+
+.pro-top-cont{border:1px solid #cccccc;background-color:#fff}
+.pro-top-left{width:309px}
+.pro-top-left ul{width:266px;margin:0 auto;padding-left:1px}
+.pro-top-left li{ float: left;width: 52px;height: 52px;margin-left:-1px}
+.pro-top-right{width:688px;border-left:1px solid #ccc}
+.pro-ipad{display: block;margin:0 auto}
+.pro-sm-ipad{background:url(../img/pro-sm-ipad.jpg)left center no-repeat}
+.pro-sm-ipad1{background:url(../img/pro-sm-ipad1.jpg)left center no-repeat}
+.pro-sm-ipad,.pro-sm-ipad1{border:1px solid #ccc}
+.pro-sm-active{border:1px solid #317ee7;position: relative}
+.pro-text{width:664px;margin:0 auto;font:12/24px 'Microsoft YaHei';padding-top:18px}
+.pro-text h3{font-size:16px;font-family:'Microsoft YaHei'}
+.pro-price{padding-top:14px;padding-bottom: 18px}
+.pro-price b{font-size:22px;color:#da2626}
+.pro-price span:nth-child(2){color:#da2626}
+.pro-selection{line-height:24px;padding:0 12px;width:50px;display: inline-block;vertical-align:middle}
+.discount{height:18px;line-height: 18px;padding-bottom:14px}
+.mhg{display: inline-block;width:52px;color:#fff;padding:0 2px;background: url(../img/icon/mhg.jpg) left center no-repeat;text-align: right}
+.pro-select{background-color:#f2f2f2 ;padding: 18px 72px 22px 0 ;line-height:24px}
+.pro-select select{border:1px solid #ccc;background-color:#fff}
+.select-block{}
+.pro-select ul{margin-top:14px;vertical-align:;margin-left:74px}
+.pro-select-big li,.pro-select-sm li{margin-bottom:10px;float:left;border:1px solid #ccc;background-color:#fff;margin-right:10px}
+.pro-select-big a{display: inline-block;padding:5px 26px }
+.pro-select-sm a{display: inline-block;padding:0 26px }
+li.pro-select-active{border:1px solid #317ee7}
+.pro-select-num{height: 32px;line-height: 32px}
+.buy-limit{margin-left:5px}
+.buy-limit b{color:#ff7300}
+.select-btn{width:15px; border:1px solid #ccc;text-align: center; display: inline-block; background: url(../img/icon/button-background.jpg) left center no-repeat}
+.select-num{width:50px;text-align: center;height:32px; display: inline-block;border-top:1px solid #ccc;border-bottom:1px solid #ccc}
+.selected{margin:20px 0 15px 28px}
+.selected span{color:#0479ca;font-weight: bold}
+.shop-car{margin-left:84px;}
+.add-shop-car{color:#fff;height: 24px;line-height: 48px;font: 16px 'Microsoft YaHei'; padding:12px 16px 12px 68px;background: url(../img/icon/shop_car.jpg) 30px center no-repeat;background-color:#ff7300;vertical-align:middle}
+.mid-line{display:inline-block;width: 1px;height:90px;background-color:#ccc;margin: 0 40px;vertical-align:middle}
+.pro-attention{margin:20px 0 20px 30px; color:#999999}
+/* 同价位&产品介绍&评价 */
+.pro-main-cont{margin-top:14px}
+.pro-main-left{width:186px;border-top:2px solid #1d86cf}
+.pro-main-right{width:790px;border:1px solid #ccc;background-color: #fff}
+.pro-main-left-item{margin-bottom:12px}
+.same-price{border:1px solid #ccc}
+.same-tit{padding-left:14px;height:38px;background-color:#f3f3f3;line-height: 38px}
+.pro-main-left .product-cont-list-item{padding-left:14px;padding-bottom:20px; width:170px;border:#ccc;background-color:#fff}
+.pro-introduce{ font-size:14px;height:38px;line-height: 38px;width: 50%;text-align: center;border-left:1px solid #ccc;margin-left:-1px;background: url(../img/icon/button-background.jpg)left center repeat-x;}
+.pro-introduce-active{font-weight:bold; background:none;background-color:#1d86cf;color:#fff}
+.pro-intro-icon{vertical-align:middle;width:20px;height:20px;line-height:38px;display:inline-block;background:url(../img/icon/pro-intro-icon.jpg)left center no-repeat }
+.pro-intro-img{display: block;padding:28px 70px 50px 134px}
+.pro-intro-cont-text{margin: 0 18px;font-family: 'Microsoft YaHei'}
+.pro-intro-tit{height:34px;line-height: 34px;border-bottom:2px solid #d7d7d7}
+.pro-intro-head{position:relative;color:#1d86cf;font-size:16px;padding-right:10px;border-bottom:2px solid #1d86cf}
+.intro-maintext{padding:22px 0 62px 0 ;font-size:14px;line-height: 24px}
+.big-img{display: block}
