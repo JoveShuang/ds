@@ -4,7 +4,7 @@
 	<meta charset="UTF-8"> 				
 	<title>首页</title>
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">`
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="headerBar clearfix">
@@ -143,7 +143,7 @@
                             <img src="img/banner/banner_01.jpg" alt="" width="810"><img src="img/banner/banner_02.jpg" alt="" width="810">
                         </div>
                         <div class="bannerSelect">
-                            <a href="javascript:void(0)" class='bannerActive'></a><a href="javascript:void(0)" class='bannerNormal'></a>
+                            <a href="javascript:void(0)"  class='bannerNormal bannerActive'></a><a href="javascript:void(0)"  class='bannerNormal'></a>
                         </div>
                     </div>
 				</div>
@@ -171,7 +171,7 @@
                             <img src="img/banner/smBanner.jpg" class="smBanner" alt=""><img src="img/banner/smBanner.jpg" class="smBanner" alt="">
                         </div>
                         <div class="smBannerSelect">
-                            <a href="javascript:void(0)" class='bannerNormal'></a><a href="javascript:void(0)" class='bannerNormal'></a><a href="javascript:void(0)" class='bannerActive'></a>
+                            <a href="javascript:void(0);" class='bannerNormal'></a><a href="javascript:void(0)" class='bannerNormal'></a><a href="javascript:void(0)" class='bannerNormal bannerActive'></a>
                         </div>
                         
                     </div>
@@ -328,5 +328,45 @@
             <img src="img/logo/footerLogo.jpg" alt=""><img src="img/logo/footerLogo.jpg" alt=""><img src="img/logo/footerLogo.jpg" alt=""><img src="img/logo/footerLogo.jpg" alt="">
         </div>
     </div>
+<script type="text/javascript" src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'></script>
+<script type='text/javascript'>
+    $(function(){
+        var img = $('.banner_img img')[0];
+        var right = parseInt($(img).css('margin-right'));
+        $('.bannerSelect a').each(function(i,e){
+            $(e).bind('click',function(){
+                debugger
+                if($(e).attr('class')=='bannerActive'){
+                    return;
+                }
+                else{
+                    if(right == 0){
+                        right -= 810;
+                        $(img).css('margin-right',right+"px");
+                        $(img).css('margin-right');
+                    }
+                    else{
+                        right +=  Math.abs(right);
+                        $(img).css('margin-right',right+"px");
+                        $(img).css('margin-right');
+                    }
+                    $(e).addClass('bannerActive').siblings().removeClass('bannerActive');
+                }
+            })
+        })
+        $('.smBannerSelect a').each(function(index,element){
+            $(element).bind('click',function(){
+                if($(element).attr('class') == 'bannerActive'){
+                    return;
+                }else{
+                    $(element).addClass('bannerActive').siblings().removeClass('bannerActive');
+                }
+            })
+        })
+    })
+        
+    
+
+</script>
 </body>
 </html>

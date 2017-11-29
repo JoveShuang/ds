@@ -168,7 +168,7 @@
 .change-page-disabled{background-color:transparent}
 .change-page-disabled a{color:#d9d9d9}
 
-/* page4 */
+/* page4-5 */
 /* 面包屑导航 */
 .user-position{margin-top:10px;height:24px;line-height: 24px;padding:10px 0}
 .user-position li{float: left;margin-left:10px}
@@ -275,3 +275,61 @@ li.pro-select-active{border:1px solid #317ee7}
 .imooc-answer{position:relative;height:55px;width: 600px;background-color:#f1f1f1;line-height: 55px}
 .imooc-answer i{position: absolute;top: -20px;left: 28px;border-width:10px;border-style: dashed dashed solid dashed;border-color:transparent transparent #f1f1f1 transparent}
 .imooc-head{color:#000;margin-left:28px}
+
+/* page6 */
+/* 头部进度 */
+.process{width:400px;height:80px;background: url(../img/icon/process.jpg) 20px center no-repeat}
+.process ul{margin-top:55px}
+.process li{float:left;color:#f3e402}
+.process li:first-child{margin-right:82px}
+.process li:nth-child(2){margin-right:80px}
+.process li:last-child{color:#fff}
+/* 购物车信息内容 */
+.info-cont{}
+.info-block{border:1px solid #ccc;font-size:12px;margin:12px 0 ;padding-bottom:16px }
+.info-cont-tit{font:14px/29px 'Microsoft YaHei';background: url(../img/icon/info-cont-tit.jpg)left center repeat-x;height:29px;padding-left: 10px;border-bottom:1px solid #e3e3e3}
+.info-cont-block{padding-top:25px;padding-left: 32px}
+.info-cont-block dl{margin-bottom:15px;height: 20px}
+.info-cont-block input,select{border:1px solid #bfbfbf;padding:3px 6px;margin-top:-5px}
+.info-cont-block dd,dt{float:left}
+.info-cont-required{ color:red;margin-right:10px }
+.info-address-confirm{display:inline-block;margin-top:7px;padding:8px 20px;background-color:#418ffa;color:#fff}
+/* 支付方式 */
+.pay-cont{margin:14px 0 30px 30px}
+.weichat{display:inline-block;width: 34px;height: 22px;background: url(../img/icon/weichat.jpg)left center no-repeat}
+/* 需要发票 */
+.info-invoices{margin-bottom:30px}
+.info-invoices-confirm{display:inline-block;margin-top:7px;padding:6px 20px;background-color:#418ffa;color:#fff}
+.info-invoices-cancel{display:inline-block;margin-top:7px;padding:5px 18px;background-color:#f6f6f6;border:1px solid #ccc}
+/* 送货信息 */
+.return-to{padding-right: 30px;font:12px/28px '宋体';color:#418ffa;float: right}
+.info-send{padding:0}
+.info-send-type{padding-left:30px;height: 30px;line-height: 30px;border-bottom: 1px solid #e6e6e6}
+.info-send-type span{display: inline-block;color:#666666}
+.send-pro-name{width:440px}
+.send-pro-other{width:125px}
+.info-send-cont{padding-top:10px;border-bottom: 1px solid #e6e6e6}
+.refrigerator{display: block}
+.send-pro-name-cont{padding-right:70px}
+.send-pro-name-text{color:#666}
+.info-send-cont span{display: inline-block}
+.send-pro-info{width:350px}
+.send-pro-num{text-indent: 30px}
+.send-price{color:red;font-weight: bold}
+.send-pro-gift{margin-top: 42px}
+.send-pro-gift-info{width:290px}
+.width-350{width:350px}
+.send-message{padding:14px 0 0 30px}
+.has-message{color:#3377ff}
+.message-cont{margin-top:35px}
+.message-tip{color:red;padding-left: 23px;margin-bottom:20px;background: url(../img/icon/message-tip.jpg)left center no-repeat}
+.paper{margin-right:5px}
+.out-of-stock-info{line-height: 22px;color:#666666}
+.out-of-stock-name{width: 15em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.out-of-stock-price span{color: #d70000;font-weight: bold}
+
+/* 提交订单 */
+.order-settlement{padding:38px 24px 0 0 ;float:right}
+.order-settlement-cont{color:#666}
+.order-settlement span{color: #ee0000;font-size:30px;font-weight:bold}
+.update-order{display:inline-block;margin:15px 0;padding:6px 36px;background-color:#ee0000;color:#fff}
