@@ -2,6 +2,8 @@
 .leftArea{float:left}
 .rightArea{float:right}
 .comWidth{width:1000px;margin:0 auto}
+.comWidth-login{width:460px;margin:0 auto}
+.comWidth-register{width:630px;margin:0 auto }
 .fl{float:left}
 .fr{float:right}
 .hide{display: none}
@@ -60,12 +62,16 @@
 .shopList_channel div{margin-right: 12px;padding:8px;display:inline-block;background-color:#2785e6}
 .shopList_channel a{color:#fff}
 /* banner */
-.banner{margin-left:190px;width: 810px;height:328px; overflow:hidden}
-.banner_img{width:1620px}
+.banner{margin-left:190px;width: 810px;height:328px; overflow:hidden;position: relative}
+.banner span{position: absolute;display: inline-block;width: 30px;height: 30px;background-color: #222}
+.banner_img{width:3240px}
 .bannerSelect{text-align: center ;margin-top:-50px}
 .bannerSelect a{width:22px;height:6px;display: inline-block;margin-left:10px}
 .bannerNormal{background:url(../img/icon/bannerSelect.jpg)}
 .bannerActive{background: url(../img/icon/bannerActive.jpg)}
+.banner-left{left: 0;top:50%;}
+.banner-right{right: 0;top:50%;}
+
 /* Main Content */
 .mainCont{}
 .content_item{}
@@ -290,8 +296,8 @@ li.pro-select-active{border:1px solid #317ee7}
 .info-cont-tit{font:14px/29px 'Microsoft YaHei';background: url(../img/icon/info-cont-tit.jpg)left center repeat-x;height:29px;padding-left: 10px;border-bottom:1px solid #e3e3e3}
 .info-cont-block{padding-top:25px;padding-left: 32px}
 .info-cont-block dl{margin-bottom:15px;height: 20px}
-.info-cont-block input,select{border:1px solid #bfbfbf;padding:3px 6px;margin-top:-5px}
-.info-cont-block dd,dt{float:left}
+.info-cont-block input,.info-cont-block select{border:1px solid #bfbfbf;padding:3px 6px;margin-top:-5px}
+.info-cont-block dd,.info-cont-block dt{float:left}
 .info-cont-required{ color:red;margin-right:10px }
 .info-address-confirm{display:inline-block;margin-top:7px;padding:8px 20px;background-color:#418ffa;color:#fff}
 /* 支付方式 */
@@ -333,3 +339,36 @@ li.pro-select-active{border:1px solid #317ee7}
 .order-settlement-cont{color:#666}
 .order-settlement span{color: #ee0000;font-size:30px;font-weight:bold}
 .update-order{display:inline-block;margin:15px 0;padding:6px 36px;background-color:#ee0000;color:#fff}
+
+/* page7-8 */
+/* 登录页 */
+/* 头部 */
+.welcome{font:22px/84px 'Microsoft YaHei';color:#fff;float:left;margin-left:22px}
+/* 主体内容块 */
+.login-block{margin-top:10px;width:374px;border:1px solid #e8e8e8;padding:44px 0 20px 84px}
+.login-block label{color:#999999;display: block}
+.e-mail input,.e-mail-password input{margin-bottom:16px;width:265px;height:28px;line-height:28px;border:1px solid #ccc;margin-top:4px;padding-right:35px;padding-left:5px}
+.e-mail{margin-bottom:16px}
+.e-mail input{background: url(../img/icon/e-mail.jpg) right center no-repeat}
+.e-mail-password{margin-bottom:16px}
+.e-mail-password input{background:url(../img/icon/e-mail-password.jpg) right center no-repeat}
+.auto-login{}
+.security-control{}
+.login-btn{margin-top:30px;color:#606060;font-size:14px;font-weight: bold; display: inline-block;text-align: center;width:308px;height:35px;line-height: 35px;background:url(../img/icon/login-btn.jpg) left center repeat-x;border:1px solid #d0e4f9}
+.cooperate{margin-top:35px;color:#666666;line-height:24px}
+
+/* 注册按钮 */
+.register-btn{display: inline-block;float: right;padding:8px 18px;background-color:#7cbe56;color:#fff;margin-right:42px}
+
+
+/* 注册页面主题内容 */
+.register-block{width:630px;padding-left:0}
+.register-bar{height:40px;line-height: 40px;margin-bottom:15px;color:#999999}
+.register-bar input{padding:0 35px 0 5px;border:1px solid #ccc;width:190px;height:28px;line-height:28px}
+.register-text{width:210px;text-align: right}
+.register-text span:first-child{color:red}
+.register-username{background: url(../img/icon/e-mail.jpg)right center no-repeat}
+.register-password{background: url(../img/icon/e-mail-password.jpg)right center no-repeat}
+.user-protocol{padding-left:210px;margin-top: 25px}
+.user-protocol a{color:#005aa0}
+.register-block .login-btn{margin:30px auto 30px auto;width:240px;display: block}
